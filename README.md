@@ -1,46 +1,88 @@
-# Getting Started with Create React App
+# Hasura Task Subscription Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository contains a ReactJS application built with TypeScript and Apollo Client. The current application displays a list of tasks in real-time using a Hasura GraphQL subscription. Your task is to extend this application by adding the ability to create and update tasks via GraphQL mutations.
 
-In the project directory, you can run:
+## Test Instructions
 
-### `npm start`
+### Objective
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Your objective is to fork this repository and implement the following features:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Task Creation:** Implement functionality to create new tasks using a GraphQL mutation.
+2. **Task Update:** Implement functionality to update existing tasks using a GraphQL mutation.
+3. **UI/UX Enhancements:** Design a user-friendly interface for creating and updating tasks.
+4. **Follow Coding Conventions:** Ensure your code adheres to the existing coding conventions and is well-documented.
+5. **Testing:** Write unit tests for the new features you implement.
 
-### `npm test`
+### Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Fork the Repository:**
+   - Fork this repository to your GitHub account.
 
-### `npm run build`
+2. **Clone the Repository:**
+   - Clone the forked repository to your local machine:
+     ```bash
+     git clone <your-forked-repo-url>
+     cd hasura-task-subscription
+     ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Install Dependencies:**
+   - Install all necessary dependencies:
+     ```bash
+     npm install
+     # or
+     yarn install
+     ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Feature 1: Task Creation**
+   - Implement a feature that allows users to create new tasks via a GraphQL mutation.
+   - Ensure the new task appears in the task list in real-time, utilizing the existing subscription.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Feature 2: Task Update**
+   - Implement a feature that allows users to update an existing task.
+   - The updated task should be reflected in the task list in real-time.
 
-### `npm run eject`
+6. **UI/UX Enhancements**
+   - Design a user-friendly interface for creating and updating tasks.
+   - Consider using a modal or a separate form for task creation and editing.
+   - Provide user feedback during the creation and update process.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+7. **Coding Conventions**
+   - Follow the existing coding conventions used in this project.
+   - Use TypeScript types where appropriate and ensure your code is well-documented.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+8. **Testing**
+   - Write unit tests for the new components and logic you have implemented.
+   - Ensure both the creation and update functionalities are covered by tests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+9. **Optional Challenge**
+   - Implement optimistic UI updates for creating and updating tasks.
+   - Handle errors gracefully, providing feedback to the user if a mutation fails.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Submission
 
-## Learn More
+1. **Commit Your Changes:**
+   - Once you have completed the task, commit your changes to a new branch in your forked repository.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Push Your Changes:**
+   - Push your changes to your forked repository on GitHub.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Submit Your Repository URL:**
+   - Submit the URL of your forked repository with your changes for review.
+
+### Evaluation Criteria
+
+Your submission will be evaluated based on the following criteria:
+
+- **Correctness:** Does the implementation meet the requirements?
+- **Code Quality:** Is the code clean, well-organized, and consistent with the project's coding standards?
+- **UI/UX:** Is the interface intuitive, responsive, and visually appealing?
+- **Testing:** Are there sufficient tests, and do they effectively cover the new features?
+- **Problem-Solving:** How well did you handle any challenges or complexities in the task?
+
+### Good Luck!
+
+We look forward to reviewing your work. If you have any questions, please feel free to reach out.
+
