@@ -1,14 +1,8 @@
-import React from 'react';
-import { useSubscription } from '@apollo/client';
-import { GET_TASKS_SUBSCRIPTION } from '../graphql/subscriptions';
-
-interface Task {
-  id: string;
-  title: string;
-  description: string;
-  created_at: string;
-  updated_at: string;
-}
+import React from "react";
+import { useSubscription } from "@apollo/client";
+import { GET_TASKS_SUBSCRIPTION } from "../graphql/subscriptions";
+import TaskButton from "./TaskButton";
+import { ITask } from "../interfaces/Task";
 
 const TaskList: React.FC = () => {
   const { data, loading, error } = useSubscription(GET_TASKS_SUBSCRIPTION);
@@ -19,13 +13,24 @@ const TaskList: React.FC = () => {
   return (
     <div>
       <h1>Task List</h1>
+      <TaskButton type="create" />
       <ul>
-        {data.task.map((task: Task) => (
+        {data.task.map((task: ITask) => (
           <li key={task.id}>
+            <TaskButton type="update" task={task} />
+
             <h2>{task.title}</h2>
             <p>{task.description}</p>
-            <p><small>Created at: {new Date(task.created_at).toLocaleString()}</small></p>
-            <p><small>Updated at: {new Date(task.updated_at).toLocaleString()}</small></p>
+            <p>
+              <small>
+                Created at: {new Date(task.created_at).toLocaleString()}
+              </small>
+            </p>
+            <p>
+              <small>
+                Updated at: {new Date(task.updated_at).toLocaleString()}
+              </small>
+            </p>
           </li>
         ))}
       </ul>
