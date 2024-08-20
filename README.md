@@ -67,10 +67,7 @@ Your objective is to fork this repository and implement the following features:
    - Once you have completed the task, commit your changes to a new branch in your forked repository.
 
 2. **Push Your Changes:**
-   - Push your changes to your forked repository on GitHub.
-
-3. **Submit Your Repository URL:**
-   - Submit the URL of your forked repository with your changes for review.
+   - After pushing your changes, create a pull request from your forked repository back to the original repository.
 
 ### Evaluation Criteria
 
